@@ -1,18 +1,52 @@
-## Getting Started
+Exercício 1
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Crie uma classe Pessoa que terá os seguintes atributos: nome, idade, ID (neste caso vamos
+representá-la como uma string de caracteres), peso e altura. Que tipo de dado você atribuiria
+às variáveis de instância? Como seria a estrutura básica da sua classe?
 
-## Folder Structure
+Exercício 2
 
-The workspace contains two folders by default, where:
+Vamos criar diferentes construtores na classe Pessoa, um sem parâmetros, e o outro deve
+receber nome, idade e ID como parâmetros; e por fim criaremos um terceiro construtor que
+recebe como parâmetro todos os atributos da classe.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Exercício 3
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Crie uma nova classe chamada Main, onde você irá chamar o método main como ensinamos
+anteriormente. Isso nos permitirá executar o nosso programa.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Exercício 4
 
-## Dependency Management
+Na classe Main que acabamos de criar, dentro do método main() pedimos para você criar um
+objeto do tipo Pessoa para cada construtor que definimos na classe, lembre-se de colocar um
+nome significativo para as variáveis para atribuir cada objeto. A seguir, vamos criar outro
+objeto do tipo Pessoa e vamos construí-lo passando apenas um valor para o nome e outro
+para a idade no construtor. Isto é possivel? O que acontece se tentarmos fazer isso?
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Exercício 5
+
+Na classe Pessoa vamos implementar os seguintes métodos: calcularIMC(), a fórmula para
+calculá-lo é: peso/(altura^2) - (peso expresso em kg e altura em metros). Se este cálculo
+retornar um valor menor que 20, a função deve retornar -1, se retornar um número entre 20 e
+25, o método deve retornar 0, por fim, se retornar um número maior que 25 deve retornar 1.
+Uma vez que o método anterior foi criado, vamos adicionar o método ehMaiorIdade() que
+deve retornar um valor booleano, levando em consideração que a maioridade será
+considerada, a partir de 18 anos. Por fim, adicione um método toString() que retornará todas
+as informações da pessoa.
+Lembre-se, você pode usar os métodos da classe java.lang.Math para calcular a potência.
+
+Exercício 6
+A partir da classe Main vamos calcular o IMC da última pessoa que criamos (aquela que
+criamos corretamente através do construtor que recebe todos os atributos como parâmetro).
+Também descobriremos se a pessoa é maior de idade ou não; Observe que em ambos os
+casos, dependendo dos resultados retornados pelos métodos, você deve imprimir uma
+mensagem correspondente ao usuário. Finalmente, queremos mostrar todos os dados dessa
+pessoa imprimindo essas informações pelo console. O formato em que você vai exibir os
+dados e as mensagens fica a seu critério, mas deve ser legível e descritivo para quem vê a
+saída do programa.
+Referências:
+
+Índice de massa corporal (IMC) Nivel de peso
+Menor que 20 Abaixo do peso
+Entre 20 e 25 Peso Saudável
+Maior que 25 Sobrepeso
